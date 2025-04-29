@@ -1,11 +1,11 @@
-import "./body.css"
+import "./body.css";
 import image1 from "./Images/Image1.png"; // Importer l'image
 import image2 from "./Images/Image2.png"; // Importer l'image
 import image3 from "./Images/Image3.png"; // Importer l'image
 import image4 from "./Images/Image4.png"; // Importer l'image
 import image5 from "./Images/Image5.png"; // Importer l'image
 
-export default function body(){
+export default function body() {
   const articles = [
     {
       title: "Prendre confiance en soi",
@@ -33,7 +33,7 @@ export default function body(){
       author: "CHERRAQI AZIZA",
       content:
         "Tenir un journal permet de mieux comprendre ses émotions et de clarifier ses pensées. C’est un outil puissant de développement personnel.",
-      imageUrl:image4 ,
+      imageUrl: image4,
     },
     {
       title: "Déconnecter pour mieux avancer",
@@ -44,23 +44,22 @@ export default function body(){
     },
   ];
 
-    return (
-        <>
-          <div>
-           <div className="blog-grid">
-             {articles.map((article, index) => (
-           <div className="blog-card" key={index}>
-            <img src={article.imageUrl} alt={article.title} />
-            <div className="blog-content">
-              <h3>{article.title}</h3>
-              <p className="author">Par {article.author}</p>
-              <p>{article.content}</p>
+  return (
+    <>
+      <div>
+        <div className="blog-grid">
+          {articles.map((article, index) => (
+            <div className="blog-card" key={index}>
+              <img src={article.imageUrl} alt={article.title} />
+              <div className="blog-content">
+                <h3>{article.title}</h3>
+                <p className="author">Par {article.author}</p>
+                <p>{article.content}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-
-        </>
-      )
+    </>
+  );
 }
