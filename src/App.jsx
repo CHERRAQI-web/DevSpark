@@ -2,11 +2,14 @@ import "./App.css";
 import Body from "./components/body";
 import React from "react";
 import Footer from "./components/Footer";
+import SectionHero from "./components/SectionHero";
+
 function App() {
   return (
     <div className="app">
       {/* Your other components */}
       <main>
+        <SectionHero></SectionHero>
         <Body />
       </main>
 
