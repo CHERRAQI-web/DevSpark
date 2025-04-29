@@ -3,11 +3,13 @@ import Body from "./components/body";
 import React from "react";
 import Footer from "./components/Footer";
 import SectionHero from "./components/SectionHero";
+import Navbar from "./components/Navbar/Navbar";
+import { TbLayoutNavbar } from "react-icons/tb";
 
 function App() {
   return (
     <div className="app">
-      {/* Your other components */}
+    <Navbar/>
       <main>
         <SectionHero></SectionHero>
         <Body />
