@@ -1,18 +1,25 @@
-// App.jsx or your main component
+// src/App.jsx
 import React from 'react';
-import Footer from './components/Footer/Footer.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Footer/Contact';
 
 function App() {
   return (
-    <div className="app">
-      {/* Your other components */}
-      <main>
-        {/* Main content of your website */}
-      </main>
-      
-      {/* Add the Footer component at the bottom of your page */}
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          {/* Page d'accueil temporaire */}
+          <Route path="/" element={<h1>Bienvenue sur notre site !</h1>} />
+
+          {/* Page Contact */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        {/* Footer présent sur toutes les pages */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
