@@ -1,7 +1,7 @@
 import "./App.css";
 import Body from "./components/body";
 import React from "react";
-import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="app">

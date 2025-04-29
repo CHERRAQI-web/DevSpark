@@ -1,5 +1,5 @@
 // Footer.jsx
-import React, { useState } from "react";
+import React from "react";
 import "./Footer.css";
 import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
@@ -7,13 +7,13 @@ import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
+  //   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you for subscribing with: ${email}`);
-    setEmail("");
-  };
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault();
+  //     alert(`Thank you for subscribing with: ${email}`);
+  //     setEmail("");
+  //   };
 
   return (
     <footer className="footer">
