@@ -6,6 +6,8 @@ import SectionHero from "./components/SectionHero";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Importing Router components
+import { TbLayoutNavbar } from "react-icons/tb";
+import QuiSommesnous from "./components/QuiSommesnous";
 
 function App() {
   return (
@@ -15,7 +17,16 @@ function App() {
         <main>
           <SectionHero />
           <Body />
+          <QuiSommesnous />
         </main>
+
+    <Navbar/>
+      <main>
+        <SectionHero></SectionHero>
+        <Body />
+        <QuiSommesnous />
+
+      </main>
 
         {/* Set up routing here */}
         <Routes>
