@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-logo">DevSpark</div>
+        <div className="nav-logo">ElevateMind</div>g
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <li><a href="/home">accueil</a></li>
-          <li><a href="/about us">Qui sommes-nous</a></li>
-          <li><a href="/postes">Postes</a></li>
+          <li><a href="/home">Accueil</a></li>
+          <li><a href="/">Qui sommes-nous</a></li>
+          <li><a href="#postes">Postes</a></li>
           {/* <li><a href="/contact">Contact</a></li> */}
         </ul>
         <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
