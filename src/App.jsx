@@ -11,7 +11,7 @@ import AjoutArticle from "./AjoutArticle";
 function App() {
   return (
     <Router>
-      <Navbar /> {/* ✅ Le header est toujours affiché */}
+      <Navbar />
       <main>
         <Routes>
           <Route
@@ -26,11 +26,10 @@ function App() {
           />
           <Route path="/contact" element={<Contact />} />
 
-          {/* ✅ SEULEMENT AjoutArticle s'affiche ici */}
           <Route path="/créeblog" element={<AjoutArticle />} />
         </Routes>
       </main>
-      <Footer /> {/* ✅ Le footer est toujours affiché */}
+      <Footer />
     </Router>
   );
 }
