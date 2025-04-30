@@ -5,35 +5,30 @@ import Footer from "./components/Footer";
 import SectionHero from "./components/SectionHero";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/contact";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Importing Router components
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importing Router components
 import { TbLayoutNavbar } from "react-icons/tb";
 import QuiSommesnous from "./components/QuiSommesnous";
 
 function App() {
   return (
-    <Router>  {/* Wrap the app in BrowserRouter */}
+    <Router>
+      {" "}
+      {/* Wrap the app in BrowserRouter */}
       <div className="app">
         <Navbar />
         <main>
-          <SectionHero />
+          <SectionHero></SectionHero>
           <Body />
           <QuiSommesnous />
         </main>
 
-    <Navbar/>
-      <main>
-        <SectionHero></SectionHero>
-        <Body />
-        <QuiSommesnous />
-
-      </main>
-
         {/* Set up routing here */}
         <Routes>
-          <Route path="/"  />  {/* This is your homepage */}
-          <Route path="/contact" element={<Contact />} />  {/* This will show the contact page */}
+          <Route path="/" /> {/* This is your homepage */}
+          <Route path="/contact" element={<Contact />} />{" "}
+          {/* This will show the contact page */}
         </Routes>
-        
+
         {/* Footer is common, so it remains at the bottom */}
         <Footer />
       </div>
