@@ -19,7 +19,7 @@ function App() {
 
         {/* Set up routing here */}
         <Routes>
-          <Route path="/" element={<Body />} />  {/* This is your homepage */}
+          <Route path="/"  />  {/* This is your homepage */}
           <Route path="/contact" element={<Contact />} />  {/* This will show the contact page */}
         </Routes>
         
