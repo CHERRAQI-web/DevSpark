@@ -1,7 +1,9 @@
 import React from 'react';
 import './Contact.css';
+import { NavLink } from 'react-router-dom';
 
 const Contact = () => {
+
   return (
     <div className="contact-container">
       <form className="contact-form">
@@ -19,7 +21,10 @@ const Contact = () => {
         <NavLink to="/">
        <button type="submit" >Envoyer</button>
        </NavLink>
-      </form>
+  
+
+  
+</form>
     </div>
   );
 };

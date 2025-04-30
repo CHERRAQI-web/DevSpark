@@ -45,9 +45,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">contacté nous</h3>
             <ul className="contact-info">
-              <li><i className="fas fa-envelope"></i><a href="mailto:info@company.com">soimem@.com</a></li>
-              <li><i className="fas fa-phone"></i><a href="tel:+1234567890">+121 676985063</a></li>
-              <li><i className="fas fa-map-marker-alt"></i><span>123 techno Park, SAFI, Morocco</span></li>
+              <li>
+                <i className="fas fa-envelope"></i>
+                <a href="mailto:info@company.com">ElevateMind@.com</a>
+              </li>
+              <li>
+                <i className="fas fa-phone"></i>
+                <a href="tel:+1234567890">+121 676985063</a>
+              </li>
+              <li>
+                <i className="fas fa-map-marker-alt"></i>
+                <span>123 techno Park, SAFI, Morocco</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,7 +64,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {new Date().getFullYear()} Company Name. All rights reserved.
+            &copy; {new Date().getFullYear()} ElevateMind. All rights reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
