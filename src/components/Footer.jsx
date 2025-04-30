@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-content">
           {/* Company Info */}
           <div className="footer-section">
-            <h3 className="footer-title">ElevateMind</h3>
+            <h3 className="footer-title">DevSpark</h3>
             <p className="footer-text">nous n',écrivons pas seulement du code - nous construisions le future,<br></br> linge par line.</p>
             <div className="social-icons">
             <a href="" style={{ color: "#190bb5" }}>
