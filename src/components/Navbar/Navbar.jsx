@@ -9,15 +9,9 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="nav-logo">DevSpark</div>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#qui-somme">About us</a>
-          </li>
-          <li>
-            <a href="#postes">Blogs</a>
-          </li>
+          <li><a href="/home">accueil</a></li>
+          <li><a href="/about us">Qui sommes-nous</a></li>
+          <li><a href="/postes">Postes</a></li>
           {/* <li><a href="/contact">Contact</a></li> */}
         </ul>
         <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
