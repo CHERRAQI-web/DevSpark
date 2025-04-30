@@ -46,7 +46,8 @@ export default function body() {
 
   return (
     <>
-      <div>
+      <div className="blogs-body">
+        <h1 className="blogs"> les Blogs</h1>
         <div className="blog-grid">
           {articles.map((article, index) => (
             <div className="blog-card" key={index}>

@@ -13,9 +13,15 @@ const SectionHero = () => {
             pour évoluer, réussir et t’épanouir pleinement dans ta vie
             personnelle et professionnelle.
           </p>
-          <a href="#" className="btn margin-right-sm">
-            Voir les Articles &darr;
-          </a>
+          <div className="btn-group">
+            <a href="#" className="btn margin-right-sm">
+              Voir les Blogs &darr;
+            </a>
+            <a href="#" className="btn margin-right-sm">
+              Ajouter Blogs{" "}
+            </a>
+          </div>
+
           <div className="delivered-articles">
             <div className="deliverd-images">
               <img src="/Imags/face1.jpg" alt="photo" />
