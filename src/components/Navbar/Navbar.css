@@ -1,6 +1,6 @@
 /* Base styles */
 .navbar {
-    background-color: #a14fdb; /* Purple */
+    background-color: #6c77b6; /* Purple */
     color: white;
     padding: 0.8rem 1.5rem;
     position: sticky;
@@ -60,7 +60,7 @@
       top: 60px;
       right: 0;
       flex-direction: column;
-      background-color: #6a0dad;
+      background-color: #6a06c77b;
       width: 200px;
       padding: 1rem;
       transform: translateX(100%);
