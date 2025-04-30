@@ -1,6 +1,4 @@
 
-
-
 import { useState } from "react";
 import "./body.css";
 import image1 from "./Images/Image1.png";
@@ -60,7 +58,7 @@ export default function Body() {
   return (
     <>
       
-
+<div id="poste">
     <h1 className="blog-title" >Les Postes de Développement Personnel</h1>
 
     <div className="blog-grid">
@@ -82,6 +80,6 @@ export default function Body() {
           </div>
         );
       })}
-    </div></>
+    </div></div></>
   );
 }

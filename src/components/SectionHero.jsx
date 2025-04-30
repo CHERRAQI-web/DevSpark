@@ -1,5 +1,6 @@
 import React from "react";
 import "./SectionHero.css";
+import AjoutArticle from "../AjoutArticle";
 
 const SectionHero = () => {
   return (
@@ -17,9 +18,11 @@ const SectionHero = () => {
             <a href="#" className="btn margin-right-sm">
               Voir les Blogs &darr;
             </a>
-            <a href="#" className="btn margin-right-sm">
+             <a href="/créeblog" className="btn margin-right-sm">
               Ajouter Blogs{" "}
-            </a>
+            </a> 
+           
+          
           </div>
 
           <div className="delivered-articles">

@@ -3,7 +3,7 @@ import './QuiSommesNous.css';
 
 const QuiSommesNous = () => {
   return (
-    <div id='qui-sommes-nous' className="qui-sommes-nous-container">
+    <div id='qui-somme' className="qui-sommes-nous-container">
       <h1>Qui sommes-nous ?</h1>
       <p>
         Bienvenue sur DevSpark, une plateforme dédiée au développement personnel. 
