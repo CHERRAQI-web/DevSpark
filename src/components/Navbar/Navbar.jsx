@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-logo">ElevateMind</div>g
+        <div className="nav-logo">ElevateMind</div>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li><a href="/home">Accueil</a></li>
-          <li><a href="/">Qui sommes-nous</a></li>
+          <li><a href="#qui-somme">Qui sommes-nous</a></li>
           <li><a href="#postes">Postes</a></li>
           {/* <li><a href="/contact">Contact</a></li> */}
         </ul>
