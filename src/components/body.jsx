@@ -123,6 +123,9 @@ export default function Body() {
   };
 
   return (
+    <>
+    <h1 className="blog-title">Mon Blog de Développement Personnel</h1>
+
     <div className="blog-grid">
       {articles.map((article, index) => {
         const isExpanded = expanded[index];
@@ -142,6 +145,6 @@ export default function Body() {
           </div>
         );
       })}
-    </div>
+    </div></>
   );
 }

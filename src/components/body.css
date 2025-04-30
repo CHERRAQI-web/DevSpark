@@ -21,7 +21,9 @@ body {
     margin-left: 70px;
     margin-right: 70px;
   }
-  
+  .blog-title{
+    align-items: center;
+  }
   .blog-card {
     background: white;
     border-radius: 15px;
