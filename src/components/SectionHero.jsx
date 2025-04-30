@@ -1,9 +1,10 @@
 import React from "react";
 import "./SectionHero.css";
+import AjoutArticle from "../AjoutArticle";
 
 const SectionHero = () => {
   return (
-    <section className="section-hero">
+    <section id="home" className="section-hero">
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">Développe ta meilleure version</h1>
@@ -17,9 +18,11 @@ const SectionHero = () => {
             <a href="#" className="btn margin-right-sm">
               Voir les Blogs &darr;
             </a>
-            <a href="#" className="btn margin-right-sm">
+             <a href="/créeblog" className="btn margin-right-sm">
               Ajouter Blogs{" "}
-            </a>
+            </a> 
+           
+          
           </div>
 
           <div className="delivered-articles">

@@ -1,9 +1,10 @@
-import "./App.css";
-import Body from "./components/body";
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SectionHero from "./components/SectionHero";
-import Navbar from "./components/Navbar/Navbar";
+import Body from "./components/body";
+import QuiSommesnous from "./components/QuiSommesnous";
 import Contact from "./components/contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importing Router components
 
