@@ -1,9 +1,10 @@
 import React from "react";
 import "./SectionHero.css";
+import AjoutArticle from "../AjoutArticle";
 
 const SectionHero = () => {
   return (
-    <section className="section-hero">
+    <section id="home" className="section-hero">
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">Développe ta meilleure version</h1>
@@ -13,9 +14,17 @@ const SectionHero = () => {
             pour évoluer, réussir et t’épanouir pleinement dans ta vie
             personnelle et professionnelle.
           </p>
-          <a href="#" className="btn margin-right-sm">
-            Voir les Articles &darr;
-          </a>
+          <div className="btn-group">
+            <a href="#" className="btn margin-right-sm">
+              Voir les Blogs &darr;
+            </a>
+             <a href="/créeblog" className="btn margin-right-sm">
+              Ajouter Blogs{" "}
+            </a> 
+           
+          
+          </div>
+
           <div className="delivered-articles">
             <div className="deliverd-images">
               <img src="/Imags/face1.jpg" alt="photo" />

@@ -1,11 +1,15 @@
-import "./body.css";
-import image1 from "./Images/Image1.png"; // Importer l'image
-import image2 from "./Images/Image2.png"; // Importer l'image
-import image3 from "./Images/Image3.png"; // Importer l'image
-import image4 from "./Images/Image4.png"; // Importer l'image
-import image5 from "./Images/Image5.png"; // Importer l'image
 
-export default function body() {
+import { useState } from "react";
+import "./body.css";
+import image1 from "./Images/Image1.png";
+import image2 from "./Images/Image2.png";
+import image3 from "./Images/Image3.png";
+import image4 from "./Images/Image4.png";
+import image5 from "./Images/Image5.png";
+
+export default function Body() {
+  const [expanded, setExpanded] = useState({});
+
   const articles = [
     {
       title: "Prendre confiance en soi",
@@ -41,25 +45,41 @@ export default function body() {
       content:
         "Prendre du recul face au numérique améliore la productivité, le sommeil et les relations humaines.",
       imageUrl: image5,
-    },
+    }, 
   ];
+
+  const toggleReadMore = (index) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
     <>
-      <div>
-        <div className="blog-grid">
-          {articles.map((article, index) => (
-            <div className="blog-card" key={index}>
-              <img src={article.imageUrl} alt={article.title} />
-              <div className="blog-content">
-                <h3>{article.title}</h3>
-                <p className="author">Par {article.author}</p>
-                <p>{article.content}</p>
-              </div>
+      
+<div id="poste">
+    <h1 className="blog-title" >Les Postes de Développement Personnel</h1>
+
+    <div className="blog-grid">
+      {articles.map((article, index) => {
+        const isExpanded = expanded[index];
+        const preview = article.content.slice(0, 80) + "...";
+
+        return (
+          <div className="blog-card" key={index}>
+            <img src={article.imageUrl} alt={article.title} />
+            <div className="blog-content">
+              <h3 className="titre">{article.title}</h3>
+              <p className="author">Par {article.author}</p>
+              <p>{isExpanded ? article.content : preview}</p>
+              <button onClick={() => toggleReadMore(index)} className="read-more-button">
+                {isExpanded ? "Lire moins" : "Lire la suite"}
+              </button>
             </div>
-          ))}
-        </div>
-      </div>
-    </>
+          </div>
+        );
+      })}
+    </div></div></>
   );
 }
