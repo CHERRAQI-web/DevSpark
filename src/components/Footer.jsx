@@ -1,13 +1,10 @@
+// Footer.jsx
 import React from "react";
 import "./Footer.css";
 import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-// <<<<<<< HEAD:src/components/Footer.jsx
-
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-// >>>>>>> BOUCHRA:src/components/Footer/Footer.jsx
 
 const Footer = () => {
   //   const [email, setEmail] = useState("");
@@ -16,6 +13,7 @@ const Footer = () => {
   //     e.preventDefault();
   //     alert(`Thank you for subscribing with: ${email}`);
   //     setEmail("");
+  //   };
 
   return (
     <footer className="footer">
@@ -23,23 +21,26 @@ const Footer = () => {
         <div className="footer-content">
           {/* Company Info */}
           <div className="footer-section">
-            <h3 className="footer-title">ElevateMind</h3>
+            <h3 className="footer-title">soi meme</h3>
             <p className="footer-text">
               nous n',écrivons pas seulement du code - nous construisions le
               future, linge par line.
             </p>
             <div className="social-icons">
               <a href="">
-                <FaFacebook size={40} />
+                <FaFacebook size={50} />
               </a>
+
               <a href="">
-                <FaXTwitter size={40} />
+                <FaXTwitter size={50} />
               </a>
+
               <a href="">
-                <FaInstagram size={40} />
+                <FaInstagram size={50} />
               </a>
+
               <a href="">
-                <CiLinkedin size={40} />
+                <CiLinkedin size={50} />
               </a>
             </div>
           </div>
@@ -54,10 +55,10 @@ const Footer = () => {
               <li>
                 <a href="#">á prpos se nous</a>
               </li>
+
               <li>
-                <Link to="/contact">Contact</Link>
-              </li>{" "}
-              {/* Link to the contact page */}
+                <a href="#">Contact</a>
+              </li>
             </ul>
           </div>
 
