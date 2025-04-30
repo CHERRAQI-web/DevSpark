@@ -1,6 +1,6 @@
 /* Footer.css */
 .footer {
-  background-color: #6a0dad;
+  background-color: #6c77b6;
   color: #fff;
   padding: 60px 0 20px;
   font-family: Arial, sans-serif;
@@ -39,7 +39,7 @@
   bottom: 0;
   width: 50px;
   height: 2px;
-  background-color: #4299e1;
+  background-color: #190bb5 ;
 }
 
 .footer-text {
@@ -51,7 +51,8 @@
 /* Social Icons */
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  color: #190bb5;
 }
 
 .social-icon {
@@ -62,12 +63,12 @@
   height: 36px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: #cbd5e0;
+  color: #d8dce0;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background-color: #4299e1;
+  background-color: #190bb5;
   color: #fff;
   transform: translateY(-3px);
 }
@@ -98,7 +99,7 @@
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: #4299e1;
+  background-color: #190bb5;
   transition: width 0.3s ease;
 }
 

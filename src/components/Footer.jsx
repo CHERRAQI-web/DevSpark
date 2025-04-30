@@ -8,26 +8,27 @@ import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Footer = () => {
   const [email, setEmail] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Thank you for subscribing with: ${email}`);
     setEmail('');
   };
-
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
           {/* Company Info */}
           <div className="footer-section">
-            <h3 className="footer-title">soi meme</h3>
+            <h3 className="footer-title">ElevateMind</h3>
             <p className="footer-text">nous n',écrivons pas seulement du code - nous construisions le future, linge par line.</p>
             <div className="social-icons">
-              <a href=""><FaFacebook size={40}/></a>
-              <a href=""><FaXTwitter size={40}/></a>
-              <a href=""><FaInstagram size={40}/></a>
-              <a href=""><CiLinkedin size={40}/></a>
+            <a href="" style={{ color: "#190bb5" }}>
+  <FaFacebook size={25} />
+</a>
+
+              <a href="" style={{ color: "#190bb5" }}><FaXTwitter size={25}/></a>
+              <a href="" style={{ color: "#190bb5" }}><FaInstagram size={25}/></a>
+              <a href="" style={{ color: "#190bb5" }}><CiLinkedin size={25}/></a>
             </div>
           </div>
 

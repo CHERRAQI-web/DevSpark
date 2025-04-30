@@ -14,15 +14,12 @@ const Contact = () => {
 
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Votre email" required />
-
         <label htmlFor="message">Message</label>
+        
         <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-
         <NavLink to="/">
        <button type="submit" >Envoyer</button>
        </NavLink>
-  
-
   
 </form>
     </div>
