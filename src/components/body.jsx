@@ -58,7 +58,7 @@ export default function Body() {
   return (
     <>
       
-<div id="poste">
+<div id="postes">
     <h1 className="blog-title" >Les Postes de Développement Personnel</h1>
 
     <div className="blog-grid">
