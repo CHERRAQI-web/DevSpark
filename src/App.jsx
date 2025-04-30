@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import SectionHero from "./components/SectionHero";
 import Navbar from "./components/Navbar/Navbar";
 import { TbLayoutNavbar } from "react-icons/tb";
-
+import QuiSommesnous from "./components/QuiSommesnous";
 function App() {
   return (
     <div className="app">
@@ -13,6 +13,8 @@ function App() {
       <main>
         <SectionHero></SectionHero>
         <Body />
+        <QuiSommesnous />
+
       </main>
 
       {/* Add the Footer component at the bottom of your page */}

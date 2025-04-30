@@ -123,7 +123,7 @@ export default function Body() {
   };
 
   return (
-    <div className="blog-grid">
+    <div id='postes' className="blog-grid">
       {articles.map((article, index) => {
         const isExpanded = expanded[index];
         const preview = article.content.slice(0, 80) + "...";
