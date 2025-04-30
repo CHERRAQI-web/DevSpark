@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="nav-logo">DevSpark</div>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li><a href="/home">accueil</a></li>
-          <li><a href="/about us">Qui sommes-nous</a></li>
+          <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
           <li><a href="/postes">Postes</a></li>
           {/* <li><a href="/contact">Contact</a></li> */}
         </ul>

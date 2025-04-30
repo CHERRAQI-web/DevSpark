@@ -1,0 +1,20 @@
+.qui-sommes-nous-container {
+    background-color: #646cff;
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .qui-sommes-nous-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .qui-sommes-nous-container p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+  }
