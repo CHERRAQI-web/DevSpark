@@ -11,10 +11,13 @@ body {
     color: #333;
     margin-bottom: 2rem;
   }
-  
+  .titre, .author{
+    text-align: center;
+  }
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
+    grid-template-columns: repeat(3,2fr);
     gap: 2rem;
   }
   
@@ -24,6 +27,7 @@ body {
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
   }
   
   .blog-card:hover {
@@ -58,3 +62,19 @@ body {
     color: #555;
     line-height: 1.5;
   }
+  .read-more-button {
+    background-color: #9c28a7;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .read-more-button:hover {
+    background-color: #8b3cc0;
+  }
+  
